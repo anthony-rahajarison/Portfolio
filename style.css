@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--bleu-fond)
+}
+
+
+/* VARIABLES */
+:root {
+    --sombre: #252525;
+    --gris: rgb(46, 46, 46);
+    --bleu: #8a0ef5;
+    --bleu-fond: #5909a0;
+    --rose: #ffe6ee;
+}
+
+@font-face {
+    font-family: futura-bold;
+    src: url(./font/Futura\ Bolder.ttf);
+  }
+
+header {
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--bleu);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+
+        p{
+            color: #ffd5e2;
+            font-family: futura-bold;
+            font-size: 35px;
+        }
+
+        h1 {
+            color: #ffd5e2;
+            font-family: futura-bold;
+            font-size: 55px;
+            transition: transform .3s ease, filter 1s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+    }
+}
+
+.grande-boite {
+    margin: 40px 25px;
+    padding-top: 5%;
+    padding-left: 6%;
+    padding-bottom: 5%;
+    background-color: var(--sombre);
+    border-radius: 10px;
+    h2 {
+        color: var(--bleu);
+        font-family: futura-bold;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    #section-projets{
+
+        gap: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+
+        .projet{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+
+            .projet-carte{
+            
+                background-color: var(--gris);
+                height: 400px;
+                width: 500px;
+                border-radius: 15px;
+                margin-top: 10px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+
+                h3{
+                    color: white;
+                    font-family: futura-bold;
+                    font-size: 30px;
+                    margin-bottom: 20px;   
+                }
+
+                img{
+                    border-radius: 15px;
+                    height: 150px;
+                    width: 150px;
+                    object-fit: cover;
+                }
+
+                p{
+                    text-align: center;
+                    color: var(--rose);
+                    font-family: futura-bold;
+                    font-size: 25px;
+                    padding: 5px 10px;
+                }
+            }
+
+            
+            .competences{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: 50px;
+                    margin-top: 10px;
+                }
+
+                p{
+                    margin: top;
+                    margin-right: 5px;
+                    text-align: center;
+                    color: var(--rose);
+                    font-family: futura-bold;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .projet:hover{
+            transform: scale(1.05);
+        }
+    }
+}
