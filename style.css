@@ -161,6 +161,25 @@ header {
     }
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    a{
+        color: #ffffff;
+        font-family: futura-bold;
+        font-size: 20px;
+        padding: 5px 10px;
+        width: 60px; /* Pour réduire la taille du lien cliquable */
+    }
+
+    p{
+        color: #ffffff;
+        font-family: futura-bold;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+}
+
 #section-competences{
     p{
         text-align: center;
