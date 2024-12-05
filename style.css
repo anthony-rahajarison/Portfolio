@@ -59,6 +59,16 @@ header {
     }
 }
 
+#description{
+    p{
+        text-align: center;
+        color: #ffffff;
+        font-family: futura-bold;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+}
+
 .grande-boite {
     margin: 40px 25px;
     padding-top: 5%;
@@ -85,7 +95,7 @@ header {
             width: 500px;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease;
+            transition: transform 0.2s ease;
 
             .projet-carte{
             
@@ -148,5 +158,15 @@ header {
         .projet:hover{
             transform: scale(1.05);
         }
+    }
+}
+
+#section-competences{
+    p{
+        text-align: center;
+        color: #ffffff;
+        font-family: futura-bold;
+        font-size: 20px;
+        padding: 5px 10px;
     }
 }
